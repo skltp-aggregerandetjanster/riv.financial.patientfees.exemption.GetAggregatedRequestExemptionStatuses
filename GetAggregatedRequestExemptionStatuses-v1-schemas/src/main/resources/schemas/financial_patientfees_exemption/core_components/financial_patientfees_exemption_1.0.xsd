@@ -166,7 +166,7 @@
     <xs:sequence>
       <xs:element name="actorTypeEnum" type="codes:ActorTypeEnum"/>
       <xs:element name="actorId" type="tns:IIType"/>
-      <xs:element name="careGiverId" type="tns:IIType"/>
+      <xs:element name="careGiverId" type="tns:IIType" minOccurs="0" />
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
