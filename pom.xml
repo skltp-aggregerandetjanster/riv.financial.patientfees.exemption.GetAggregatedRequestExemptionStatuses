@@ -20,7 +20,7 @@
     <apache-cfx.version>3.2.7</apache-cfx.version>
   </properties>
 
-    <scm>
+  <scm>
 		<url>https://github.com:443/skltp-aggregerandetjanster/riv.financial.patientfees.exemption.GetAggregatedRequestExemptionStatuses</url>
 		<connection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.financial.patientfees.exemption.GetAggregatedRequestExemptionStatuses.git</connection>
 		<developerConnection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.financial.patientfees.exemption.GetAggregatedRequestExemptionStatuses.git</developerConnection>
