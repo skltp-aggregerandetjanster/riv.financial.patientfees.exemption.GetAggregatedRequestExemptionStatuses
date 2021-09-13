@@ -1,15 +1,15 @@
 package se.skltp.aggregatingservices.riv.financial.patientfees.exemption.requestexemptionstatuses;
 
-import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import org.junit.jupiter.api.BeforeAll;
 import riv.financial.patientfees.exemption.requestexemptionstatusesresponder.v1.RequestExemptionStatusesResponseType;
 import se.skltp.aggregatingservices.api.AgpServiceFactory;
 import se.skltp.aggregatingservices.tests.CreateFindContentTest;
 import se.skltp.aggregatingservices.data.TestDataGenerator;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+@ExtendWith(SpringExtension.class)
 public class GARESCreateRequestListTest extends CreateFindContentTest {
 
   private static GARESAgpServiceConfiguration configuration = new GARESAgpServiceConfiguration();
@@ -21,7 +21,7 @@ public class GARESCreateRequestListTest extends CreateFindContentTest {
     super(testDataGenerator, agpServiceFactory, configuration);
   }
 
-  @BeforeClass
+  @BeforeAll
   public static void before() {
     configuration = new GARESAgpServiceConfiguration();
     agpServiceFactory = new GARESAgpServiceFactoryImpl();
