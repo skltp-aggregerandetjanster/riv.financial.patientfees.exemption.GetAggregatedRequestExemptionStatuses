@@ -11,7 +11,7 @@
 
   	<groupId>se.skltp.aggregatingservices.riv.financial.patientfees.exemption</groupId>
 		<artifactId>GetAggregatedRequestExemptionStatuses-v1</artifactId>
-		<version>1.0.0-RC3</version>
+		<version>1.0.0-RC4-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>GetAggregatedRequestExemptionStatuses-v1</name>
 
@@ -57,7 +57,7 @@
 		<url>https://github.com:443/skltp-aggregerandetjanster/riv.financial.patientfees.exemption.GetAggregatedRequestExemptionStatuses</url>
 		<connection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.financial.patientfees.exemption.GetAggregatedRequestExemptionStatuses.git</connection>
 		<developerConnection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.financial.patientfees.exemption.GetAggregatedRequestExemptionStatuses.git</developerConnection>
-		<tag>v1.0.0-RC3</tag>
+		<tag>HEAD</tag>
 	</scm>
 
   <modules>  <module>GetAggregatedRequestExemptionStatuses-v1-schemas</module>
