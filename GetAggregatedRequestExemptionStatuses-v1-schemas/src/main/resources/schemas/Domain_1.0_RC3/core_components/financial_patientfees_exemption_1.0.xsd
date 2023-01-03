@@ -31,7 +31,7 @@
 		<xs:sequence>
 			<xs:element name="highCostProtectionPeriod" type="tns:DatePeriodType"/>
 			<xs:element name="exemptionPeriod" type="tns:DatePeriodType"/>
-			<xs:element name="typeOfExemption" type="codes:TypeOfExemtionEnum"/>
+			<xs:element name="typeOfExemption" type="codes:TypeOfExemptionEnum"/>
 			<xs:element name="region" type="tns:IIType" />
 			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
@@ -54,7 +54,7 @@
 			<xs:element name="fee" type="tns:AmountType" maxOccurs="1" minOccurs="0"/>
 			<xs:element name="dateOfVisit" type="tns:DateType" minOccurs="0"/>
 			<xs:element name="timeOfRegistration" type="tns:TimeStampType" minOccurs="0"/>
-			<xs:element name="typeOfFee" type="codes:TypeOfExemtionEnum"/>
+			<xs:element name="typeOfFee" type="codes:TypeOfExemptionEnum"/>
 			<xs:element name="careGiver" type="tns:IIType" minOccurs="0"/>
 			<xs:element name="careUnit" type="tns:IIType" minOccurs="0"/>
 			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
