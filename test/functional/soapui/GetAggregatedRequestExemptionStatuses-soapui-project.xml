@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="8874234c-c337-459c-9120-ecf68517ace0" activeEnvironment="Default" name="RequestExemptionStatuses" resourceRoot="${projectDir}" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a93fd2ee-0b84-4829-9f12-8d4649b19e90" wsaVersion="NONE" name="RequestExemptionStatusesResponderBinding" type="wsdl" bindingName="{urn:riv:financial:patientfees:exemption:RequestExemptionStatuses:1:rivtabp21}RequestExemptionStatusesResponderBinding" soapVersion="1_1" anonymous="optional" definition="../../../../../../../../../../../INTELL~1/REQUES~1/REQUES~1/REQUES~1/src/main/RESOUR~1/schemas/FINANC~1/INTERA~1/REQUES~1/REQUES~1.WSD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\hbragman\INTELL~1\REQUES~1\REQUES~1\REQUES~1\src\main\RESOUR~1\schemas\FINANC~1\INTERA~1\REQUES~1\REQUES~1.WSD"><con:part><con:url>file:\C:\Users\hbragman\INTELL~1\REQUES~1\REQUES~1\REQUES~1\src\main\RESOUR~1\schemas\FINANC~1\INTERA~1\REQUES~1\REQUES~1.WSD</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
+<con:soapui-project id="6d7a32ec-d35e-419f-b642-ce1f8daf956b" activeEnvironment="Default" name="GetAggregatedRequestExemptionStatuses" resourceRoot="${projectDir}" soapui-version="5.7.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="15fcdda4-904b-4a13-a2a3-e637184a84d0" wsaVersion="NONE" name="RequestExemptionStatusesResponderBinding" type="wsdl" bindingName="{urn:riv:financial:patientfees:exemption:RequestExemptionStatuses:1:rivtabp21}RequestExemptionStatusesResponderBinding" soapVersion="1_1" anonymous="optional" definition="../../../../RIVFIN~1.GET/GETAGG~3/src/main/RESOUR~1/schemas/DOMAIN~1.0_R/INTERA~1/REQUES~1/REQUES~1.WSD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\INTERA~1\REQUES~1\REQUES~1.WSD"><con:part><con:url>file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\INTERA~1\REQUES~1\REQUES~1.WSD</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements. See the NOTICE file
  distributed with this work for additional information
  regarding copyright ownership. Sveriges Kommuner och Landsting licenses this file
@@ -63,7 +63,7 @@
       <soap:address location="http://tempuri.org"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Users\hbragman\INTELL~1\REQUES~1\REQUES~1\REQUES~1\src\main\RESOUR~1\schemas\FINANC~1\INTERA~1\REQUES~1\RequestExemptionStatusesResponder_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\INTERA~1\REQUES~1\RequestExemptionStatusesResponder_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements. See the NOTICE file
  distributed with this work for additional information
  regarding copyright ownership. Sveriges Kommuner och Landsting licenses this file
@@ -98,7 +98,7 @@
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\hbragman\INTELL~1\REQUES~1\REQUES~1\REQUES~1\src\main\RESOUR~1\schemas\FINANC~1\core_components\financial_patientfees_exemption_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one or more contributor 
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\core_components\financial_patientfees_exemption_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one or more contributor 
 	license agreements. See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership. Sveriges Kommuner och Landsting 
 	licenses this file to you under the Apache License, Version 2.0 (the "License"); 
@@ -122,7 +122,7 @@
     <xs:sequence>
       <xs:element name="highCostProtectionPeriod" type="tns:DatePeriodType"/>
       <xs:element name="exemptionPeriod" type="tns:DatePeriodType"/>
-      <xs:element name="typeOfExemption" type="codes:TypeOfExemtionEnum"/>
+      <xs:element name="typeOfExemption" type="codes:TypeOfExemptionEnum"/>
       <xs:element name="region" type="tns:IIType"/>
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
@@ -142,7 +142,7 @@
       <xs:element name="fee" type="tns:AmountType" maxOccurs="1" minOccurs="0"/>
       <xs:element name="dateOfVisit" type="tns:DateType" minOccurs="0"/>
       <xs:element name="timeOfRegistration" type="tns:TimeStampType" minOccurs="0"/>
-      <xs:element name="typeOfFee" type="codes:TypeOfExemtionEnum"/>
+      <xs:element name="typeOfFee" type="codes:TypeOfExemptionEnum"/>
       <xs:element name="careGiver" type="tns:IIType" minOccurs="0"/>
       <xs:element name="careUnit" type="tns:IIType" minOccurs="0"/>
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -238,11 +238,11 @@
     <xs:sequence>
       <xs:element name="actorTypeEnum" type="codes:ActorTypeEnum"/>
       <xs:element name="actorId" type="tns:IIType"/>
-      <xs:element name="careGiverId" type="tns:IIType"/>
+      <xs:element name="careGiverId" type="tns:IIType" minOccurs="0"/>
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\hbragman\INTELL~1\REQUES~1\REQUES~1\REQUES~1\src\main\RESOUR~1\schemas\FINANC~1\core_components\financial_patientfees_exemption_enum_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one or more contributor 
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\core_components\financial_patientfees_exemption_enum_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one or more contributor 
 	license agreements. See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership. Sveriges Kommuner och Landsting 
 	licenses this file to you under the Apache License, Version 2.0 (the "License"); 
@@ -253,7 +253,7 @@
 	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
 	the specific language governing permissions and limitations under the License.-->
 <xs:schema targetNamespace="urn:riv:financial:patientfees:exemption:enums:1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:riv:financial:patientfees:exemption:enums:1">
-  <xs:simpleType name="TypeOfExemtionEnum">
+  <xs:simpleType name="TypeOfExemptionEnum">
     <xs:annotation>
       <xs:documentation>CARE_VISIT - Öppen sjukvård
 				TECHNICAL_AID - Tekniska hjälpmedel
@@ -291,7 +291,7 @@
       <xs:enumeration value="CAREGIVER"/>
     </xs:restriction>
   </xs:simpleType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\hbragman\INTELL~1\REQUES~1\REQUES~1\REQUES~1\src\main\RESOUR~1\schemas\FINANC~1\core_components\itintegration_registry_1.0.xsd</con:url><con:content><![CDATA[<xs:schema targetNamespace="urn:riv:itintegration:registry:1" elementFormDefault="qualified" version="1.0" xmlns="urn:riv:itintegration:registry:1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\core_components\itintegration_registry_1.0.xsd</con:url><con:content><![CDATA[<xs:schema targetNamespace="urn:riv:itintegration:registry:1" elementFormDefault="qualified" version="1.0" xmlns="urn:riv:itintegration:registry:1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>Beskrivning: 	Grundl��ggande informationsobjekt f��r dom��nen itintegration:registry (adressering av tj��nster)
 			
@@ -320,7 +320,7 @@
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://tempuri.org</con:endpoint></con:endpoints><con:operation id="2b682712-8a41-4660-993e-cf0ae15582c0" isOneWay="false" action="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1:RequestExemptionStatuses" name="RequestExemptionStatuses" bindingOperationName="RequestExemptionStatuses" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c7edb7af-34be-453f-ab2a-cccf7f6020f7" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://tempuri.org</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1" xmlns:urn2="urn:riv:financial:patientfees:exemption:1">\r
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://tempuri.org</con:endpoint></con:endpoints><con:operation id="9615d86c-fe43-4ded-b407-d57b57d4dce0" isOneWay="false" action="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1:RequestExemptionStatuses" name="RequestExemptionStatuses" bindingOperationName="RequestExemptionStatuses" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6b5d711a-6cfa-4a25-afc8-457df90c3c47" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://tempuri.org</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1" xmlns:urn2="urn:riv:financial:patientfees:exemption:1">\r
    <soapenv:Header>\r
       <urn:LogicalAddress>?</urn:LogicalAddress>\r
    </soapenv:Header>\r
@@ -343,6 +343,7 @@
                <urn2:extension>?</urn2:extension>\r
                <!--You may enter ANY elements at this point-->\r
             </urn2:actorId>\r
+            <!--Optional:-->\r
             <urn2:careGiverId>\r
                <urn2:root>?</urn2:root>\r
                <urn2:extension>?</urn2:extension>\r
@@ -354,38 +355,116 @@
          <!--You may enter ANY elements at this point-->\r
       </urn1:RequestExemptionStatuses>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1:RequestExemptionStatuses"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="d95c3eeb-c7dc-4e33-a71f-23dd7630800e" name="RequestExemptionStatusesResponderBinding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7f180f23-11d1-458d-914e-7ed3cf74e802" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="RequestExemptionStatuses TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="7313cf13-77d1-4ecb-884a-01ecb60311a2" name="RequestExemptionStatuses"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>RequestExemptionStatusesResponderBinding</con:interface><con:operation>RequestExemptionStatuses</con:operation><con:request name="RequestExemptionStatuses" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="699d32c9-c79d-4dd3-96e4-188ae454b39f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://tempuri.org</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1" xmlns:urn2="urn:riv:financial:patientfees:exemption:1">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1:RequestExemptionStatuses"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="34cb30e6-eb5c-4176-9e64-2ab034f0b587" name="local testsuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="0460d126-9f96-49c4-9eee-8ac5d5e4cab7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1: Hämta data från bakomliggande producenter" searchProperties="true"><con:settings/><con:testStep type="request" id="85b06d7c-4801-47d5-860a-ed59cdaa610f" name="RequestExemptionStatuses"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>RequestExemptionStatusesResponderBinding</con:interface><con:operation>RequestExemptionStatuses</con:operation><con:request name="RequestExemptionStatuses" id="4bd64773-0cc3-4fee-b3a7-58e2ab90ca2a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">&#13;
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>&#13;
+  &lt;con:entry key="x-skltp-correlation-id" value="321"/>&#13;
+  &lt;con:entry key="x-vp-sender-id" value="sample-sender-id"/>&#13;
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1" xmlns:urn2="urn:riv:financial:patientfees:exemption:1">\r
    <soapenv:Header>\r
-      <urn:LogicalAddress>?</urn:LogicalAddress>\r
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>\r
    </soapenv:Header>\r
    <soapenv:Body>\r
       <urn1:RequestExemptionStatuses>\r
          <urn1:requestId>\r
-            <urn2:root>?</urn2:root>\r
-            <urn2:extension>?</urn2:extension>\r
-            <!--You may enter ANY elements at this point-->\r
+            <urn2:root>00001</urn2:root>\r
+            <urn2:extension>00002</urn2:extension>\r
          </urn1:requestId>\r
          <urn1:patientId>\r
-            <urn2:root>?</urn2:root>\r
-            <urn2:extension>?</urn2:extension>\r
-            <!--You may enter ANY elements at this point-->\r
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension>121212121212</urn2:extension>
          </urn1:patientId>\r
          <urn1:actor>\r
             <urn2:actorTypeEnum>?</urn2:actorTypeEnum>\r
             <urn2:actorId>\r
-               <urn2:root>?</urn2:root>\r
-               <urn2:extension>?</urn2:extension>\r
-               <!--You may enter ANY elements at this point-->\r
+               <urn2:root>nnnn</urn2:root>\r
+               <urn2:extension>xxxx</urn2:extension>\r
             </urn2:actorId>\r
-            <urn2:careGiverId>\r
-               <urn2:root>?</urn2:root>\r
-               <urn2:extension>?</urn2:extension>\r
-               <!--You may enter ANY elements at this point-->\r
-            </urn2:careGiverId>\r
-            <!--You may enter ANY elements at this point-->\r
          </urn1:actor>\r
-         <urn1:responseLogicalAddress>?</urn1:responseLogicalAddress>\r
-         <!--You may enter ANY elements at this point-->\r
+         <urn1:responseLogicalAddress>LOGICAL_ADDDR</urn1:responseLogicalAddress>\r
       </urn1:RequestExemptionStatuses>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1:RequestExemptionStatuses"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="2d1f8d22-abff-425d-8b31-d76d721e6215" name="LoadTest 1"><con:settings/><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6247de88-3887-4397-a290-40b9470fa218" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" id="6efcf9fe-8b2d-4615-af8e-1da81dee3fd1" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="2a1f2f54-6ced-4931-951b-37a33795283a" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="XPath Match" id="5cb1f3c6-63ed-45fa-a664-1fe3db54eaf1" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1:RequestExemptionStatuses" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5cb5d1ba-86ff-4d24-954e-39d3f7e1ecef" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC2: Testperson saknar engagemang" searchProperties="true"><con:settings/><con:testStep type="request" id="2e781e13-2da5-4c53-a1f7-1b3e2d9e8acd" name="RequestExemptionStatuses"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>RequestExemptionStatusesResponderBinding</con:interface><con:operation>RequestExemptionStatuses</con:operation><con:request name="RequestExemptionStatuses" id="4bd64773-0cc3-4fee-b3a7-58e2ab90ca2a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">&#13;
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>&#13;
+  &lt;con:entry key="x-skltp-correlation-id" value="321"/>&#13;
+  &lt;con:entry key="x-vp-sender-id" value="sample-sender-id"/>&#13;
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1" xmlns:urn2="urn:riv:financial:patientfees:exemption:1">\r
+   <soapenv:Header>\r
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <urn1:RequestExemptionStatuses>\r
+         <urn1:requestId>\r
+            <urn2:root>00001</urn2:root>\r
+            <urn2:extension>00002</urn2:extension>\r
+         </urn1:requestId>\r
+         <urn1:patientId>\r
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension>188803099368</urn2:extension>
+         </urn1:patientId>\r
+         <urn1:actor>\r
+            <urn2:actorTypeEnum>?</urn2:actorTypeEnum>\r
+            <urn2:actorId>\r
+               <urn2:root>nnnn</urn2:root>\r
+               <urn2:extension>xxxx</urn2:extension>\r
+            </urn2:actorId>\r
+         </urn1:actor>\r
+         <urn1:responseLogicalAddress>LOGICAL_ADDDR</urn1:responseLogicalAddress>\r
+      </urn1:RequestExemptionStatuses>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6247de88-3887-4397-a290-40b9470fa218" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" id="6efcf9fe-8b2d-4615-af8e-1da81dee3fd1" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="2a1f2f54-6ced-4931-951b-37a33795283a" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="XPath Match" id="5cb1f3c6-63ed-45fa-a664-1fe3db54eaf1" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1:RequestExemptionStatuses" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="bcb494a0-acba-4881-b7f0-11b34f1b3d06" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC3: Inget svar från ett system" searchProperties="true"><con:settings/><con:testStep type="request" id="85ed8d38-8fca-4995-84af-0715afebb123" name="RequestExemptionStatuses"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>RequestExemptionStatusesResponderBinding</con:interface><con:operation>RequestExemptionStatuses</con:operation><con:request name="RequestExemptionStatuses" id="4bd64773-0cc3-4fee-b3a7-58e2ab90ca2a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">&#13;
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>&#13;
+  &lt;con:entry key="x-skltp-correlation-id" value="321"/>&#13;
+  &lt;con:entry key="x-vp-sender-id" value="sample-sender-id"/>&#13;
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1" xmlns:urn2="urn:riv:financial:patientfees:exemption:1">\r
+   <soapenv:Header>\r
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <urn1:RequestExemptionStatuses>\r
+         <urn1:requestId>\r
+            <urn2:root>00001</urn2:root>\r
+            <urn2:extension>00002</urn2:extension>\r
+         </urn1:requestId>\r
+         <urn1:patientId>\r
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension>194911172296</urn2:extension>
+         </urn1:patientId>\r
+         <urn1:actor>\r
+            <urn2:actorTypeEnum>?</urn2:actorTypeEnum>\r
+            <urn2:actorId>\r
+               <urn2:root>nnnn</urn2:root>\r
+               <urn2:extension>xxxx</urn2:extension>\r
+            </urn2:actorId>\r
+         </urn1:actor>\r
+         <urn1:responseLogicalAddress>LOGICAL_ADDDR</urn1:responseLogicalAddress>\r
+      </urn1:RequestExemptionStatuses>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6247de88-3887-4397-a290-40b9470fa218" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" id="6efcf9fe-8b2d-4615-af8e-1da81dee3fd1" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="2a1f2f54-6ced-4931-951b-37a33795283a" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="XPath Match" id="5cb1f3c6-63ed-45fa-a664-1fe3db54eaf1" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1:RequestExemptionStatuses" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="966e92dd-b345-4b76-82ee-b822cca1dfc3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC5: Error från system (exception)" searchProperties="true"><con:settings/><con:testStep type="request" id="4757eebc-eb59-4c1b-9216-8a128b79a8ea" name="RequestExemptionStatuses"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>RequestExemptionStatusesResponderBinding</con:interface><con:operation>RequestExemptionStatuses</con:operation><con:request name="RequestExemptionStatuses" id="4bd64773-0cc3-4fee-b3a7-58e2ab90ca2a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">&#13;
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>&#13;
+  &lt;con:entry key="x-skltp-correlation-id" value="321"/>&#13;
+  &lt;con:entry key="x-vp-sender-id" value="sample-sender-id"/>&#13;
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1" xmlns:urn2="urn:riv:financial:patientfees:exemption:1">\r
+   <soapenv:Header>\r
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <urn1:RequestExemptionStatuses>\r
+         <urn1:requestId>\r
+            <urn2:root>00001</urn2:root>\r
+            <urn2:extension>00002</urn2:extension>\r
+         </urn1:requestId>\r
+         <urn1:patientId>\r
+            <urn2:root>1.2.752.129.2.1.3.1</urn2:root>
+            <urn2:extension>192011189228</urn2:extension>
+         </urn1:patientId>\r
+         <urn1:actor>\r
+            <urn2:actorTypeEnum>?</urn2:actorTypeEnum>\r
+            <urn2:actorId>\r
+               <urn2:root>nnnn</urn2:root>\r
+               <urn2:extension>xxxx</urn2:extension>\r
+            </urn2:actorId>\r
+         </urn1:actor>\r
+         <urn1:responseLogicalAddress>LOGICAL_ADDDR</urn1:responseLogicalAddress>\r
+      </urn1:RequestExemptionStatuses>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6247de88-3887-4397-a290-40b9470fa218" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" id="6efcf9fe-8b2d-4615-af8e-1da81dee3fd1" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="2a1f2f54-6ced-4931-951b-37a33795283a" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="XPath Match" id="5cb1f3c6-63ed-45fa-a664-1fe3db54eaf1" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="52f41366-b442-49b3-93a1-8bd8543524f1" name="Contains"><con:configuration><token>NoDataSynchFailed</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:riv:financial:patientfees:exemption:RequestExemptionStatusesResponder:1:RequestExemptionStatuses" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>agg-env</con:name><con:value>http://localhost:8081/GetAggregatedRequestExemptionStatuses/service/v1</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
