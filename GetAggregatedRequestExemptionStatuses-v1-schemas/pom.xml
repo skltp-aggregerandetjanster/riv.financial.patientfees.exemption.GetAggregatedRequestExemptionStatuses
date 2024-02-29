@@ -35,7 +35,7 @@
 							<sourceRoot>${schema.gen.src.dir}</sourceRoot>
 							<wsdlOptions>
 								<wsdlOption>
-									<wsdl>${schema.path}/Domain_1.0_RC3/interactions/RequestExemptionStatusesInteraction/RequestExemptionStatusesInteraction_1.0_RIVTABP21.wsdl</wsdl>
+									<wsdl>${schema.path}/DOMAIN_1.0/interactions/RequestExemptionStatusesInteraction/RequestExemptionStatusesInteraction_1.0_RIVTABP21.wsdl</wsdl>
 									<extraargs>
 										<extraarg>-validate</extraarg>
 										<extraarg>-p</extraarg>

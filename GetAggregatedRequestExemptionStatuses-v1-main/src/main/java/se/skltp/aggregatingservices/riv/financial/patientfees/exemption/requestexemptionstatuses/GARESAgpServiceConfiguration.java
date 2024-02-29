@@ -11,7 +11,7 @@ import riv.financial.patientfees.exemption.requestexemptionstatuses.v1.rivtabp21
 @ConfigurationProperties(prefix = "getaggregatedrequestexemptionstatuses.v1")
 public class GARESAgpServiceConfiguration extends se.skltp.aggregatingservices.configuration.AgpServiceConfiguration {
 
-  public static final String SCHEMA_PATH = "/schemas/Domain_1.0_RC3/interactions/RequestExemptionStatusesInteraction/RequestExemptionStatusesInteraction_1.0_RIVTABP21.wsdl";
+  public static final String SCHEMA_PATH = "/schemas/Domain_1.0/interactions/RequestExemptionStatusesInteraction/RequestExemptionStatusesInteraction_1.0_RIVTABP21.wsdl";
 
   public GARESAgpServiceConfiguration() {
 
