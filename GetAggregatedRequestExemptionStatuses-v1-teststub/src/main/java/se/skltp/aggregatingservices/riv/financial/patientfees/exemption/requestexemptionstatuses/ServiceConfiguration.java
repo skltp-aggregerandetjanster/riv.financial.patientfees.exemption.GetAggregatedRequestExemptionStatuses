@@ -12,7 +12,7 @@ import se.skltp.aggregatingservices.config.TestProducerConfiguration;
 @ConfigurationProperties(prefix="getaggregatedrequestexemptionstatuses.v1.teststub")
 public class ServiceConfiguration extends TestProducerConfiguration {
 
-  public static final String SCHEMA_PATH = "/schemas/Domain_1.0/interactions/RequestExemptionStatusesInteraction/RequestExemptionStatusesInteraction_1.0_RIVTABP21.wsdl";
+  public static final String SCHEMA_PATH = "/schemas/DOMAIN_1.0/interactions/RequestExemptionStatusesInteraction/RequestExemptionStatusesInteraction_1.0_RIVTABP21.wsdl";
 
   public ServiceConfiguration() {
     setProducerAddress("http://localhost:8083/vp");
