@@ -29,6 +29,7 @@
 
 	<xs:complexType name="ExemptionType">
 		<xs:sequence>
+			<xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="highCostProtectionPeriod" type="tns:DatePeriodType"/>
 			<xs:element name="exemptionPeriod" type="tns:DatePeriodType"/>
 			<xs:element name="typeOfExemption" type="codes:TypeOfExemptionEnum"/>
@@ -157,7 +158,7 @@
 	<xs:complexType name="IIType">
 		<xs:sequence>
 			<xs:element name="root" type="xs:string"/>
-			<xs:element name="extension" type="xs:string"/>
+			<xs:element name="extension" type="xs:string" minOccurs="0"/>
 			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>

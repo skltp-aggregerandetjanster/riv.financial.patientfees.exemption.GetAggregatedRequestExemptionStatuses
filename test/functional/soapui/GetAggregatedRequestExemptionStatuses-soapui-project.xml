@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="6d7a32ec-d35e-419f-b642-ce1f8daf956b" activeEnvironment="Default" name="GetAggregatedRequestExemptionStatuses" resourceRoot="${projectDir}" soapui-version="5.7.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="15fcdda4-904b-4a13-a2a3-e637184a84d0" wsaVersion="NONE" name="RequestExemptionStatusesResponderBinding" type="wsdl" bindingName="{urn:riv:financial:patientfees:exemption:RequestExemptionStatuses:1:rivtabp21}RequestExemptionStatusesResponderBinding" soapVersion="1_1" anonymous="optional" definition="../../../../RIVFIN~1.GET/GETAGG~3/src/main/RESOUR~1/schemas/DOMAIN~1.0_R/INTERA~1/REQUES~1/REQUES~1.WSD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\INTERA~1\REQUES~1\REQUES~1.WSD"><con:part><con:url>file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\INTERA~1\REQUES~1\REQUES~1.WSD</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
+<con:soapui-project id="6d7a32ec-d35e-419f-b642-ce1f8daf956b" activeEnvironment="Default" name="GetAggregatedRequestExemptionStatuses" resourceRoot="${projectDir}" soapui-version="5.7.2" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="15fcdda4-904b-4a13-a2a3-e637184a84d0" wsaVersion="NONE" name="RequestExemptionStatusesResponderBinding" type="wsdl" bindingName="{urn:riv:financial:patientfees:exemption:RequestExemptionStatuses:1:rivtabp21}RequestExemptionStatusesResponderBinding" soapVersion="1_1" anonymous="optional" definition="../../../GetAggregatedRequestExemptionStatuses-v1-schemas/src/main/resources/schemas/DOMAIN_1.0/interactions/RequestExemptionStatusesInteraction/RequestExemptionStatusesInteraction_1.0_RIVTABP21.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/Git/AggGARES/GetAggregatedRequestExemptionStatuses-v1-schemas/src/main/resources/schemas/DOMAIN_1.0/interactions/RequestExemptionStatusesInteraction/RequestExemptionStatusesInteraction_1.0_RIVTABP21.wsdl"><con:part><con:url>file:/C:/Git/AggGARES/GetAggregatedRequestExemptionStatuses-v1-schemas/src/main/resources/schemas/DOMAIN_1.0/interactions/RequestExemptionStatusesInteraction/RequestExemptionStatusesInteraction_1.0_RIVTABP21.wsdl</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements. See the NOTICE file
  distributed with this work for additional information
  regarding copyright ownership. Sveriges Kommuner och Landsting licenses this file
@@ -63,7 +63,7 @@
       <soap:address location="http://tempuri.org"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\INTERA~1\REQUES~1\RequestExemptionStatusesResponder_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Git\AggGARES\GetAggregatedRequestExemptionStatuses-v1-schemas\src\main\resources\schemas\DOMAIN_1.0\interactions\RequestExemptionStatusesInteraction\RequestExemptionStatusesResponder_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements. See the NOTICE file
  distributed with this work for additional information
  regarding copyright ownership. Sveriges Kommuner och Landsting licenses this file
@@ -98,7 +98,7 @@
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\core_components\financial_patientfees_exemption_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one or more contributor 
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Git\AggGARES\GetAggregatedRequestExemptionStatuses-v1-schemas\src\main\resources\schemas\DOMAIN_1.0\core_components\financial_patientfees_exemption_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one or more contributor 
 	license agreements. See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership. Sveriges Kommuner och Landsting 
 	licenses this file to you under the Apache License, Version 2.0 (the "License"); 
@@ -120,6 +120,7 @@
   </xs:complexType>
   <xs:complexType name="ExemptionType">
     <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1"/>
       <xs:element name="highCostProtectionPeriod" type="tns:DatePeriodType"/>
       <xs:element name="exemptionPeriod" type="tns:DatePeriodType"/>
       <xs:element name="typeOfExemption" type="codes:TypeOfExemptionEnum"/>
@@ -230,7 +231,7 @@
   <xs:complexType name="IIType">
     <xs:sequence>
       <xs:element name="root" type="xs:string"/>
-      <xs:element name="extension" type="xs:string"/>
+      <xs:element name="extension" type="xs:string" minOccurs="0"/>
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
@@ -242,7 +243,7 @@
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\core_components\financial_patientfees_exemption_enum_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one or more contributor 
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Git\AggGARES\GetAggregatedRequestExemptionStatuses-v1-schemas\src\main\resources\schemas\DOMAIN_1.0\core_components\financial_patientfees_exemption_enum_1.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one or more contributor 
 	license agreements. See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership. Sveriges Kommuner och Landsting 
 	licenses this file to you under the Apache License, Version 2.0 (the "License"); 
@@ -291,7 +292,7 @@
       <xs:enumeration value="CAREGIVER"/>
     </xs:restriction>
   </xs:simpleType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVFIN~1.GET\GETAGG~3\src\main\RESOUR~1\schemas\DOMAIN~1.0_R\core_components\itintegration_registry_1.0.xsd</con:url><con:content><![CDATA[<xs:schema targetNamespace="urn:riv:itintegration:registry:1" elementFormDefault="qualified" version="1.0" xmlns="urn:riv:itintegration:registry:1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Git\AggGARES\GetAggregatedRequestExemptionStatuses-v1-schemas\src\main\resources\schemas\DOMAIN_1.0\core_components\itintegration_registry_1.0.xsd</con:url><con:content><![CDATA[<xs:schema targetNamespace="urn:riv:itintegration:registry:1" elementFormDefault="qualified" version="1.0" xmlns="urn:riv:itintegration:registry:1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>Beskrivning: 	Grundl��ggande informationsobjekt f��r dom��nen itintegration:registry (adressering av tj��nster)
 			
