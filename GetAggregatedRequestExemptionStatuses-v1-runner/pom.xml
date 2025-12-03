@@ -12,7 +12,6 @@
     <dependency>
       <groupId>se.skltp.agp</groupId>
       <artifactId>agp-application</artifactId>
-      <version>${agp-parent.version}</version>
     </dependency>
     <dependency>
       <groupId>se.skltp.aggregatingservices.riv.financial.patientfees.exemption</groupId>

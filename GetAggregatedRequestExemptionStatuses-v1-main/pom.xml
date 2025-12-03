@@ -12,7 +12,6 @@
     <dependency>
       <groupId>se.skltp.agp</groupId>
       <artifactId>agp-core</artifactId>
-      <version>${agp-parent.version}</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -51,13 +50,11 @@
     <dependency>
       <groupId>se.skltp.agp</groupId>
       <artifactId>agp-teststub</artifactId>
-      <version>${agp-parent.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>se.skltp.agp</groupId>
       <artifactId>agp-application</artifactId>
-      <version>${agp-parent.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>

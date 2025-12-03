@@ -17,7 +17,6 @@
     <dependency>
       <groupId>se.skltp.agp</groupId>
       <artifactId>agp-teststub</artifactId>
-      <version>${agp-parent.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
