@@ -9,7 +9,7 @@
     <relativePath/>
   </parent>
   <properties>
-    <!-- No props yet. -->
+    <agp-parent.version>4.0.3</agp-parent.version>
   </properties>
   <groupId>se.skltp.aggregatingservices.riv.financial.patientfees.exemption</groupId>
   <artifactId>GetAggregatedRequestExemptionStatuses-v1</artifactId>
@@ -39,18 +39,46 @@
       <url>${snapshot-nexus-url}</url>
     </snapshotRepository>
   </distributionManagement>
-  <dependencies>
+    <dependencyManagement>
+      <dependencies>
+          <dependency>
+              <groupId>se.skltp.agp</groupId>
+              <artifactId>agp-core</artifactId>
+              <version>${agp-parent.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>se.skltp.agp</groupId>
+              <artifactId>agp-teststub</artifactId>
+              <version>${agp-parent.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>se.skltp.agp</groupId>
+              <artifactId>agp-application</artifactId>
+              <version>${agp-parent.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>se.skltp.agp</groupId>
+              <artifactId>agp-application</artifactId>
+              <type>test-jar</type>
+              <classifier>tests</classifier>
+              <scope>test</scope>
+              <version>${agp-parent.version}</version>
+          </dependency>
+      </dependencies>
+  </dependencyManagement>
+
+    <dependencies>
     <dependency>
-    <groupId>jakarta.jws</groupId>
-    <artifactId>jakarta.jws-api</artifactId>
+      <groupId>jakarta.jws</groupId>
+      <artifactId>jakarta.jws-api</artifactId>
     </dependency>
     <dependency>
-    <groupId>jakarta.xml.bind</groupId>
-    <artifactId>jakarta.xml.bind-api</artifactId>
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
     </dependency>
     <dependency>
-    <groupId>jakarta.xml.ws</groupId>
-    <artifactId>jakarta.xml.ws-api</artifactId>
+      <groupId>jakarta.xml.ws</groupId>
+      <artifactId>jakarta.xml.ws-api</artifactId>
     </dependency>
   </dependencies>
   <build>
