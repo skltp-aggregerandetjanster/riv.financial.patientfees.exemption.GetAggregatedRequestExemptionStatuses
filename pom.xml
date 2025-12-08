@@ -19,8 +19,8 @@
   <modules>
     <module>GetAggregatedRequestExemptionStatuses-v1-schemas</module>
     <module>GetAggregatedRequestExemptionStatuses-v1-main</module>
-      <module>GetAggregatedRequestExemptionStatuses-v1-runner</module>
-      <module>GetAggregatedRequestExemptionStatuses-v1-teststub</module>
+    <module>GetAggregatedRequestExemptionStatuses-v1-runner</module>
+    <module>GetAggregatedRequestExemptionStatuses-v1-teststub</module>
   </modules>
   <scm>
     <connection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.financial.patientfees.exemption.GetAggregatedRequestExemptionStatuses.git</connection>
@@ -39,6 +39,18 @@
       <url>${snapshot-nexus-url}</url>
     </snapshotRepository>
   </distributionManagement>
+  <repositories>
+    <repository>
+      <id>release-nexus</id>
+      <name>Release Nexus</name>
+      <url>${releases-nexus-url}</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshot-nexus</id>
+      <name>Snapshot Nexus</name>
+      <url>${snapshot-nexus-url}</url>
+    </snapshotRepository>
+  </repositories>
     <dependencyManagement>
       <dependencies>
           <dependency>
